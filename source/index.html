@@ -1,3 +1,15 @@
+<!-- Вопросы к Малику:
+  1. В чем ошибка подключения иконки проекта в главном меню?
+  2. Подключены шрифты с помощью миксина в font-family шрифт именуется без кавычек, в чем ошибка? (Решение через доавление снаружи одинарной кавычки сняло претензии от линтера сборки)
+  3. Стоит ли создать базовую сущность для всех зеленых кнопок секции hero и каталога
+    .button {
+      font-size: 16px;
+      line-height: 20px;
+      colot: $light-text;
+      text-transform: uppercase;
+      (центровка через display: flex;)
+    } -->
+
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
@@ -61,7 +73,7 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <h1 class="hero__title">Функциональное<br>питание для котов</h1>
+      <h1 class="hero__title prime-title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <button class="hero__button" type="button">Подобрать программу</button>
       <picture>
@@ -86,7 +98,7 @@
       </ul>
     </section>
     <section class="working-principle">
-      <h2 class="working-principle__title">Как это работает</h2>
+      <h2 class="working-principle__title prime-title">Как это работает</h2>
       <ol class="working-principle__list">
         <li class="working-principle__item">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="working-principle__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -95,7 +107,7 @@
       </ol>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
+      <h2 class="example__title prime-title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
       <picture>

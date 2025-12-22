@@ -1,0 +1,37 @@
+.hero {
+  font-family: $title-font;
+  color: $light-text;
+
+  @media (min-width: $desktop-width) {
+    color: $dark-text;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $dark-text;
+  }
+}
+
+.hero__title {
+  line-height: 100%;
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.hero__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

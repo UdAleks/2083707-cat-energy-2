@@ -1,0 +1,19 @@
+.subscribtion {
+  font-family: $title-font;
+}
+
+.subscribtion__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribtion__button {
+  font-size: 20px;
+  line-height: 26px;
+}
