@@ -1,0 +1,21 @@
+.site-nav-list {
+  font-family: $title-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-text;
+  text-transform: uppercase;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    color: $light-text;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.site-nav-list a {
+  text-decoration: none;
+}

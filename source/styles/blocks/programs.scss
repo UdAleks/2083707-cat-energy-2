@@ -1,0 +1,26 @@
+.programs {
+
+}
+
+.programs__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+  }
+}
+
+.programs__link {
+  font-family: $title-font;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
