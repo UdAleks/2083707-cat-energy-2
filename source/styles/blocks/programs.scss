@@ -15,6 +15,7 @@
 }
 
 .programs__link {
+  display: block;
   font-family: $title-font;
   font-size: 16px;
   line-height: 100%;
@@ -23,4 +24,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.programs__link-icon {
+  display: block;
+  width: 30px;
+  height: 10px;
+  background-image: url("../../../build/icons/stack.svg#icon-arrow");
 }
