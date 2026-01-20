@@ -1,11 +1,29 @@
 .subscribtion {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
   font-family: $title-font;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 110px 104px;
+  }
+}
+
+.subscribtion__title {
+  display: flex;
+  white-space: nowrap;
 }
 
 .subscribtion__text {
+  margin: 0 auto 24px;
   font-size: 16px;
   line-height: 24px;
   color: $dark-text;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -13,7 +31,48 @@
   }
 }
 
+.subscribtion__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    flex-direction: column;
+  }
+}
+
+.subscribtion__field {
+  width: 100%;
+  min-height: 56px;
+  padding: 13px;
+  font-size: 20px;
+  line-height: 20px;
+  border: 1px solid #cdcdcd;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+.subscribtion__field::placeholder {
+  text-transform: uppercase;
+}
+
 .subscribtion__button {
+  width: 100%;
+  min-height: 56px;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }

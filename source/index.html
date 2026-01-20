@@ -1,5 +1,4 @@
 <!-- Вопросы к Малику:
-  2. Подключены шрифты с помощью миксина в font-family шрифт именуется без кавычек, в чем ошибка? (Решение через доавление снаружи одинарной кавычки сняло претензии от линтера сборки)
   3. Стоит ли создать базовую сущность для всех зеленых кнопок секции hero и каталога
     .button {
       font-size: 16px;
@@ -60,47 +59,81 @@
     <section class="hero">
       <h1 class="hero__title prime-title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-      <button class="hero__button" type="button">Подобрать программу</button>
-      <picture>
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index/can-desktop@1x.png.png, images/index/can-desktop@2x.png 2x">
+      <button class="hero__button primary-button" type="button">Подобрать программу</button>
+      <picture class="hero__image">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index/can-desktop@1x.webp, images/index/can-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index/can-tablet@1x.webp, images/index/can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="images/index/can-mobile@1x.webp 1x, images/index/can-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index/can-desktop@1x.png, images/index/can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index/can-tablet@1x.png, images/index/can-tablet@2x.png 2x">
-        <img class="hero__image" src="images/index/can-mobile@1x.png" srcset="images/index/can-mobile@2x.png 2x" width="280" height="270" alt="Баночка с кошачьим питанием, со вкусом курицы.">
+        <img src="images/index/can-mobile@1x.png" srcset="images/index/can-mobile@2x.png 2x" width="280" height="270" alt="Баночка с кошачьим питанием, со вкусом курицы.">
       </picture>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы диеты для котов</h2>
       <ul class="programs__list">
-        <li class="programs__item">
-          <h3 class="programs__title">Похудение</h3>
-          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link" href="#">Каталог Slim <span class="programs__link-icon"></span></a>
+        <li class="programs__item program">
+          <h3 class="program__title">Похудение</h3>
+          <span class="program__icon program__icon--slim"></span>
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program__link" href="#">Каталог Slim <span class="program__link-icon"></span></a>
         </li>
-        <li class="programs__item">
-          <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link" href="#">Каталог Pro <span class="programs__link-icon"></span></a>
+        <li class="programs__item program">
+          <h3 class="program__title">Набор массы</h3>
+          <span class="program__icon program__icon--pro"></span>
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="program__link" href="#">Каталог Pro <span class="program__link-icon"></span></a>
         </li>
       </ul>
     </section>
-    <section class="working-principle">
-      <h2 class="working-principle__title prime-title">Как это работает</h2>
-      <ol class="working-principle__list">
-        <li class="working-principle__item">Функциональное питание содержит только полезные питательные вещества.</li>
-        <li class="working-principle__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="working-principle__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="working-principle__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+    <section class="working-principles">
+      <h2 class="working-principles__title prime-title">Как это работает</h2>
+      <ol class="working-principles__list">
+        <li class="working-principles__item">
+          <span class="working-principles__icon working-principles__icon--1"></span>
+          <p class="working-principles__description">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="working-principles__item">
+          <span class="working-principles__icon working-principles__icon--2"></span>
+          <p class="working-principles__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+        <li class="working-principles__item">
+          <span class="working-principles__icon working-principles__icon--3"></span>
+          <p class="working-principles__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+        </li>
+        <li class="working-principles__item">
+          <span class="working-principles__icon working-principles__icon--4"></span>
+          <p class="working-principles__description">Уже через месяц наслаждайтесь изменениями к лучшему<br class="tablet-br"> вашего питомца!</p>
+        </li>
       </ol>
     </section>
     <section class="example">
       <h2 class="example__title prime-title">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
+      <dl class="example__list">
+        <div class="example__item example__item--weight">
+          <dt class="example__item-title example__item-title--weight">Снижение веса</dt>
+          <dd class="example__item-value example__item-value--weight">5кг</dd>
+        </div>
+        <div class="example__item example__item--time">
+          <dt class="example__item-title example__item-title--time">Затрчено времени</dt>
+          <dd class="example__item-value example__item-value--time">60 дней</dd>
+        </div>
+        <div class="example__item example__item--cost">
+          <dt class="example__item-title example__item-title--cost">Затраты на питание:</dt>
+          <dd class="example__item-value example__item-value--cost">15 000 руб.</dd>
+        </div>
+      </dl>
       <picture>
+        <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/index/exmaple-before-tablet-desktop@1x.webp, images/index/exmaple-before-tablet-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="images/index/exmaple-before-mobile@1x.webp, images/index/exmaple-before-mobile@2x.webp 2x">
         <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/index/exmaple-before-tablet-desktop@1x.png, images/index/exmaple-before-tablet-desktop@2x.png 2x">
         <img src="images/index/exmaple-before-mobile@1x.png" srcset="images/index/exmaple-before-mobile@2x.png 2x" width="68" height="86" alt="Фотография кота с изюыточной массой тела">
       </picture>
       <div class="example__compare-toggle"></div>
       <picture>
+        <source media="(min-width:768px)" width="560" height="512" type="image/webp" srcset="images/index/exmaple-after-tablet-desktop@1x.webp, images/index/exmaple-after-tablet-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="images/index/exmaple-after-mobile@1x.webp, images/index/exmaple-after-mobile@2x.webp 2x">
         <source media="(min-width:768px)" width="560" height="512" type="image/png" srcset="images/index/exmaple-after-tablet-desktop@1x.png, images/index/exmaple-after-tablet-desktop@2x.png 2x">
         <img src="images/index/exmaple-after-mobile@1x.png" srcset="images/index/exmaple-after-mobile@2x.png 2x" width="68" height="86" alt="Фотография стройного кота">
       </picture>

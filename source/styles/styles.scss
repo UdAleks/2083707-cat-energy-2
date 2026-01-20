@@ -5,10 +5,13 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
 @import "./blocks/site-nav-list.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/prime-title.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/products.scss";
 @import "./blocks/products-card.scss";
 @import "./blocks/show-more.scss";
 @import "./blocks/catalog-section-title.scss";
@@ -16,5 +19,9 @@
 @import "./blocks/gift.scss";
 @import "./blocks/subscribtion.scss";
 @import "./blocks/programs.scss";
+@import "./blocks/program.scss";
+@import "./blocks/working-principles.scss";
 @import "./blocks/example.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
 @import "./blocks/studio.scss";

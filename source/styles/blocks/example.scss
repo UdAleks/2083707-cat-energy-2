@@ -1,8 +1,62 @@
 .example {
-  display: block; //временная заглушка
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 126px;
+  }
+}
+
+.example__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "example-weight example-time"
+    "example-cost   example-cost";
+  margin: 0;
+  padding: 0;
+}
+
+.example__item--cost {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.example__price {
+  margin: 0;
+  font-family: $title-font;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .example__compare-toggle {
+  display: block;
   width: 40px;
   height: 256px;
   mask-image: url("../../.icons/stack.svg#compare-slider-arrows");

@@ -1,5 +1,18 @@
 .show-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: end;
   color: $dark-gray-text-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 40px;
+    border: 2px solid #d3d3d3;
+  }
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    padding: 25px 20px;
+  }
 }
 
 .show-more__title {
@@ -17,4 +30,10 @@
 .show-more__text {
   font-size: 12px;
   line-height: 16px;
+}
+
+.show-more__button {
+  width: 100%;
+  color: $dark-gray-text-4;
+  background-color: $site-secondary-bg;
 }
