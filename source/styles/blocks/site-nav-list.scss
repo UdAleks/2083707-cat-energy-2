@@ -1,29 +1,44 @@
 .site-nav-list {
-  position: absolute;
-  top: 53px;
-  left: -210px;
-  z-index: 2;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  flex-wrap: wrap;
+  width: 100vw;
   margin: 0;
   padding: 0;
   font-family: $title-font;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: $site-bg;
   list-style: none;
 
-  @media (min-width: $desktop-width) {
-    color: $light-text;
+  @media (max-width: calc($tablet-width - 1px)) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 2;
+    flex-direction: column;
+    background-color: $site-bg;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 33px;
+    width: calc(100vw - 270px);
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 31px;
+    width: calc(100vw - 460px);
+  }
+}
+
+.site-nav-list--closed {
+  @media (max-width: calc($tablet-width - 1px)) {
+    display: none;
   }
 }
 
@@ -32,11 +47,52 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 22px 10px 24px;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    border-top: none;
+  }
+
+  &:hover,
+  &focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-nav-list a {
+  padding: 22px 20px 24px;
   color: $dark-text;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0 14px;
+  }
+}
+
+.site-nav-list--index a {
+  @media (min-width: $desktop-width) {
+    color: $light-text;
+  }
+}
+
+.site-nav-list__item--current {
+  @media (min-width: $tablet-width) {
+    text-decoration: 2px underline $primary-decoration-color;
+    text-underline-offset: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-underline-offset: 8px;
+  }
+}
+
+.site-nav-list__item--current-index {
+  @media (min-width: $desktop-width) {
+    text-decoration: 2px underline $site-bg;
+  }
 }

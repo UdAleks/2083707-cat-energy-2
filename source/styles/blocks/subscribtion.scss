@@ -1,25 +1,39 @@
 .subscribtion {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
   font-family: $title-font;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 68px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 110px 104px;
+    margin-bottom: 104px;
   }
 }
 
 .subscribtion__title {
-  display: flex;
-  white-space: nowrap;
+  margin: 0 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
-.subscribtion__text {
-  margin: 0 auto 24px;
+.subscribtion__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribtion__label {
+  margin: 0 0 24px;
   font-size: 16px;
   line-height: 24px;
   color: $dark-text;
@@ -31,7 +45,7 @@
   }
 }
 
-.subscribtion__form {
+.subscribtion__field-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +61,8 @@
   padding: 13px;
   font-size: 20px;
   line-height: 20px;
-  border: 1px solid #cdcdcd;
+  color: $dark-gray-text-4;
+  border: 1px solid #e7e7e7;
 
   @media (max-width: calc($tablet-width - 1px)) {
     margin-bottom: 16px;
@@ -60,6 +75,18 @@
   @media (min-width: $desktop-width) {
     width: 496px;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &focus {
+    border: 2px solid $dark-gray-text-4;
+  }
+}
+
+.subscribtion__field--error {
+  border: 2px solid #ff8282;
 }
 
 .subscribtion__field::placeholder {

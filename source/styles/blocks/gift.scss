@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 290px;
-  margin: 0 auto;
   padding: 10px;
   background-image:
     linear-gradient(rgba($primary-decoration-color, 0.85), rgba($primary-decoration-color, 0.85)),
@@ -18,13 +16,8 @@
   background-size: cover;
   background-position: center;
 
-  @media (max-width: calc($tablet-width - 1px)) {
-    width: calc(100vw - 40px);
-  }
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    width: calc(100vw - 60px);
     background-image:
       linear-gradient(rgba($primary-decoration-color, 0.85), rgba($primary-decoration-color, 0.85)),
       image-set(
@@ -36,8 +29,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    min-height: 288px;
     background-image:
       linear-gradient(rgba($primary-decoration-color, 0.85), rgba($primary-decoration-color, 0.85)),
       image-set(

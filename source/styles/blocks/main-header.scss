@@ -1,12 +1,17 @@
 .main-header {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 280px;
   min-height: 38px;
-  padding: 13px 20px 14px;
+  padding: 13px 13px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 34px 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    padding: 55px 110px 0;
   }
 }
 
@@ -23,4 +28,17 @@
   @media (min-width: $desktop-width) {
     width: 202px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo img {
+  display: block;
 }

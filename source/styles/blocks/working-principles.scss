@@ -10,6 +10,16 @@
   }
 }
 
+.working-principles__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: $dark-text;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
 .working-principles__list {
   display: grid;
   grid-template-columns: 1fr;
