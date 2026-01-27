@@ -1,1 +1,9 @@
 /* в этот файл добавляет скрипты*/
+const mainNavList = document.querySelector('.main-nav');
+const mainNavToggle = document.querySelector('.main-nav__toggle');
+const siteNavList = document.querySelector('.site-nav-list');
+
+mainNavToggle.addEventListener('click', () => {
+  mainNavList.classList.toggle('main-nav--opened');
+  siteNavList.classList.toggle('site-nav-list--closed');
+});
