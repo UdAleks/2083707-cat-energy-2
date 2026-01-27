@@ -1,11 +1,11 @@
 .additional {
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 96px;
   }
 }
@@ -14,7 +14,7 @@
   margin: 0 0 36px;
   font-family: $title-font;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
 }
@@ -26,12 +26,12 @@
   width: calc(100vw - 40px);
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     gap: 70px;
     width: calc(100vw - 60px);
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     grid-template-columns: 1fr 245px;
     gap: 81px;
     width: calc(100vw - 220px);
@@ -51,11 +51,11 @@
   min-height: 290px;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
     margin: 0;

@@ -8,15 +8,15 @@
   justify-content: space-between;
   padding: 26px 20px;
 
-  @media (min-width: 440px) {
+  @media screen and (min-width: 440px) {
     grid-template-columns: 163px 163px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 60px 70px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
     left: 110px;
@@ -34,7 +34,7 @@
   line-height: 20px;
   font-style: normal;
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     text-align: right;
   }
 }
@@ -47,7 +47,7 @@
   color: #111111;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
@@ -67,7 +67,7 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     height: 400px;
     background-image:
       image-set(
@@ -79,7 +79,7 @@
     background-size: 768px 400px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     background-image:
       image-set(
         url("../../images/common/map-desktop@1x.webp") 1x type("image/webp"),

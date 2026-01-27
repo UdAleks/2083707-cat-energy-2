@@ -11,11 +11,11 @@
   line-height: 20px;
   border-bottom: 1px solid #cdcdcd;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 16px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "additional-card-title       additional-card-parameter-wrapper"
@@ -25,7 +25,7 @@
     border-right: 1px solid #cdcdcd;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 244px;
     grid-template-areas: "additional-card-title additional-card-parameter-wrapper additional-card-link-button";
     align-items: center;
@@ -46,12 +46,12 @@
   color: $dark-gray-text-2;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 25px;
     font-size: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -62,19 +62,19 @@
   justify-content: space-between;
   margin-bottom: 15px;
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     margin-bottom: 22px;
     justify-content: flex-end;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-right: 40px;
     margin-bottom: 0;
   }
 }
 
 .additional-card__parameter-value {
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-left: 49px;
   }
 }

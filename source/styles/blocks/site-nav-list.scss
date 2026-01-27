@@ -12,7 +12,7 @@
   text-transform: uppercase;
   list-style: none;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     position: absolute;
     top: 65px;
     left: 0;
@@ -22,7 +22,7 @@
     border-bottom: 1px solid #e6e6e6;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     justify-content: flex-end;
     gap: 33px;
     width: calc(100vw - 270px);
@@ -30,14 +30,14 @@
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     gap: 31px;
     width: calc(100vw - 460px);
   }
 }
 
 .site-nav-list--closed {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     display: none;
   }
 }
@@ -49,7 +49,7 @@
   width: 100%;
   border-top: 1px solid #e6e6e6;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: max-content;
     border-top: none;
   }
@@ -67,32 +67,31 @@
 .site-nav-list a {
   padding: 22px 20px 24px;
   color: $dark-text;
-  text-decoration: none;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 12px 0 14px;
   }
 }
 
 .site-nav-list--index a {
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     color: $light-text;
   }
 }
 
 .site-nav-list__item--current {
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     text-decoration: 2px underline $primary-decoration-color;
     text-underline-offset: 12px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     text-underline-offset: 8px;
   }
 }
 
 .site-nav-list__item--current-index {
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     text-decoration: 2px underline $site-bg;
   }
 }

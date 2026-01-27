@@ -4,11 +4,11 @@
   font-family: $title-font;
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 104px;
   }
 }
@@ -16,11 +16,11 @@
 .subscribtion__title {
   margin: 0 0 32px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 66px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 72px;
   }
 }
@@ -39,7 +39,7 @@
   color: $dark-text;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
   }
@@ -50,7 +50,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     flex-direction: column;
   }
 }
@@ -64,15 +64,15 @@
   color: $dark-gray-text-4;
   border: 1px solid #e7e7e7;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     margin-bottom: 16px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 376px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 496px;
   }
 
@@ -99,7 +99,7 @@
   font-size: 20px;
   line-height: 26px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 256px;
   }
 }

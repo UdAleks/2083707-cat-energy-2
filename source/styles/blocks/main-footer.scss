@@ -7,13 +7,13 @@
   padding: 40px 20px;
   background-color: $site-secondary-bg;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 56px 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding: 66px 110px;
   }
 }
@@ -21,7 +21,7 @@
 .main-footer__link {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 
@@ -49,7 +49,7 @@
   width: 100%;
   padding-top: 20px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 168px;
     padding-top: 0;
   }

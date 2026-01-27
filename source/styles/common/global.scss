@@ -44,7 +44,7 @@ a {
   color: $dark-gray-text-4;
   background-color: $site-bg;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -60,7 +60,6 @@ a {
   line-height: 20px;
   color: $light-text;
   text-transform: uppercase;
-  text-decoration: none;
   background-color: $primary-decoration-color;
   border: none;
   cursor: pointer;
@@ -71,8 +70,19 @@ a {
   }
 
   &:active {
-    color: rgba($light-text, $alpha: 0.3);
+    color: rgba($light-text, 0.3);
     background-color: #5eaa2f;
+  }
+}
+
+.prime-title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
   }
 }
 
@@ -85,16 +95,16 @@ a {
   color: $dark-text;
   white-space: nowrap;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     text-indent: 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     gap: 40px;
     font-size: 32px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 40px;
   }
 }
@@ -107,15 +117,15 @@ a {
 }
 
 .catalog-section-title::before {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     display: none;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 70px;
   }
 }
@@ -128,7 +138,7 @@ a {
 .mobile-br {
   display: none;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     display: block;
   }
 }
@@ -136,7 +146,7 @@ a {
 .tablet-br {
   display: none;
 
-  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+  @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     display: block;
   }
 }
@@ -144,7 +154,7 @@ a {
 .tablet-desktop-br {
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     display: block;
   }
 }

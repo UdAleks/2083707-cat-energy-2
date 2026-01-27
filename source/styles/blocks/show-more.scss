@@ -5,11 +5,11 @@
   align-self: end;
   color: $dark-gray-text-4;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     padding: 25px 20px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     padding: 50px 32px 40px;
     border: 2px solid #d3d3d3;
   }
@@ -21,13 +21,13 @@
   height: 30px;
   margin-bottom: 23px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
     margin-bottom: 50px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 40px;
   }
 }
@@ -64,13 +64,13 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     margin-bottom: 26px;
   }
 }
@@ -81,11 +81,11 @@
   line-height: 16px;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     min-height: 97px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     min-height: 105px;
   }
 }

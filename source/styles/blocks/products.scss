@@ -1,16 +1,16 @@
 .products {
   margin: 0 auto 26px;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     border-top: 1px solid #d9d9d9;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
     margin-bottom: 74px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: calc(100vw - 220px);
     margin-bottom: 71px;
   }
@@ -20,12 +20,12 @@
   margin: 0 20px 41px;
   padding-top: 27px;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     margin: 0 0 84px;
     padding-top: 65px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding-top: 74px;
   }
 }
@@ -37,27 +37,27 @@
   padding: 0;
   list-style: none;
 
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     gap: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fit, 324px);
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fit, 245px);
   }
 }
 
 .products__list li {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     border-top: 1px solid #ebebeb;
   }
 }
 
 .products__list:last-child {
-  @media (max-width: calc($tablet-width - 1px)) {
+  @media screen and (max-width: calc($tablet-width - 1px)) {
     border-bottom: 1px solid #ebebeb;
   }
 }
@@ -65,11 +65,11 @@
 .products__item {
   width: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 324px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 245px;
   }
 }
