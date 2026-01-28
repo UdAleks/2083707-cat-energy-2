@@ -17,6 +17,26 @@
   }
 }
 
+@media screen and (max-width: calc($tablet-width - 1px)) {
+  .main-header--nojs {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-header--nojs .main-header__logo {
+    padding: 13px 13px 14px 20px;
+  }
+
+  .main-header--nojs button {
+    display: none;
+  }
+
+  .main-header--nojs ul {
+    position: initial;
+  }
+}
+
 .main-header__logo {
   display: flex;
   justify-content: space-between;
@@ -43,8 +63,4 @@
 
 .main-header__logo img {
   display: block;
-}
-
-.main-header__main-nav {
-  // align-self: end;
 }

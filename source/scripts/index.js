@@ -1,9 +1,10 @@
 /* в этот файл добавляет скрипты*/
+const mainHeader = document.querySelector('.main-header');
 const mainNavList = document.querySelector('.main-nav');
 const mainNavToggle = document.querySelector('.main-nav__toggle');
 const siteNavList = document.querySelector('.site-nav-list');
 
-mainNavToggle.classList.remove('main-nav__toggle--nojs');
+mainHeader.classList.remove('main-header--nojs');
 
 mainNavToggle.addEventListener('click', () => {
   mainNavList.classList.toggle('main-nav--opened');

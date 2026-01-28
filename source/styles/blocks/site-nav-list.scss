@@ -37,6 +37,12 @@
   }
 }
 
+// .site-nav-list--nojs {
+//   @media screen and (max-width: calc($tablet-width - 1px)) {
+//     position: initial;
+//   }
+// }
+
 .site-nav-list--closed {
   @media screen and (max-width: calc($tablet-width - 1px)) {
     display: none;
