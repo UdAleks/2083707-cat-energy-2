@@ -19,6 +19,10 @@
   }
 }
 
+.main-nav__toggle--nojs {
+  display: none;
+}
+
 .main-nav__toggle::before {
   content: "";
   position: absolute;

@@ -245,11 +245,15 @@
   &:hover::after,
   &:focus::after {
     background-color: #68b738;
+    outline: none;
+    box-shadow: none;
   }
 
   &:hover::before,
-  &:focus::after {
+  &:focus::before {
     border-color: #68b738;
+    outline: none;
+    box-shadow: none;
   }
 
   &:active,
