@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  margin: 0 30px;
+  margin: 0 auto;
   list-style: none;
 
   @media screen and (min-width: $mobile-width) and (max-width: calc($tablet-width - 1px)) {

@@ -1,21 +1,23 @@
 .additional {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
 
   @media screen and (min-width: $desktop-width) {
+    width: 1220px;
     margin-bottom: 96px;
   }
 }
 
 .additional__title {
-  margin: 0 0 36px;
+  margin: 0 0 36px 20px;
   font-family: $title-font;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
+    margin-left: 70px;
   }
 }
 
@@ -34,7 +36,7 @@
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: 1fr 245px;
     gap: 81px;
-    width: calc(100vw - 220px);
+    width: 1220px;
   }
 }
 

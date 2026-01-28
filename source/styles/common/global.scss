@@ -48,6 +48,10 @@ a {
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    overflow-x: hidden;
+  }
 }
 
 .primary-button {
@@ -87,21 +91,26 @@ a {
 }
 
 .catalog-section-title {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  // display: flex;
+  // align-items: center;
+  // gap: 20px;
+  position: relative;
+  width: fit-content;
   font-size: 24px;
   line-height: 100%;
   color: $dark-text;
-  white-space: nowrap;
+  background-color: $site-bg;
+  box-shadow: -20px 0 0 0 $site-bg, 20px 0 0 0 $site-bg;
+  // white-space: nowrap;
 
   @media screen and (max-width: calc($tablet-width - 1px)) {
-    text-indent: 20px;
+    // text-indent: 20px;
   }
 
   @media screen and (min-width: $tablet-width) {
-    gap: 40px;
+    // gap: 40px;
     font-size: 32px;
+    box-shadow: -40px 0 0 0 $site-bg, 40px 0 0 0 $site-bg;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -109,31 +118,50 @@ a {
   }
 }
 
-.catalog-section-title::before,
-.catalog-section-title::after {
-  content: "";
-  height: 2px;
-  background-color: $primary-decoration-color;
-}
-
 .catalog-section-title::before {
-  @media screen and (max-width: calc($tablet-width - 1px)) {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    width: 30px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    width: 70px;
-  }
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  content: "";
+  background-color: $primary-decoration-color;
+  box-shadow: 100vw 0 0 0 $primary-decoration-color;
+  z-index: -1;
 }
 
-.catalog-section-title::after {
-  flex-grow: 1;
-  width: 35px;
-}
+// .catalog-section-title2 {
+
+//   color: $dark-text;
+
+// }
+
+// .catalog-section-title::before,
+// .catalog-section-title::after {
+//   content: "";
+//   height: 2px;
+//   background-color: $primary-decoration-color;
+// }
+
+// .catalog-section-title::before {
+//   @media screen and (max-width: calc($tablet-width - 1px)) {
+//     display: none;
+//   }
+
+//   @media screen and (min-width: $tablet-width) {
+//     width: 30px;
+//   }
+
+//   @media screen and (min-width: $desktop-width) {
+//     width: 70px;
+//   }
+// }
+
+// .catalog-section-title::after {
+//   flex-grow: 1;
+//   width: 35px;
+// }
 
 .mobile-br {
   display: none;

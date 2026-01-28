@@ -58,6 +58,7 @@
 
 .show-more__title {
   margin: 0 0 8px;
+  font-family: $title-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -83,6 +84,8 @@
 
   @media screen and (min-width: $tablet-width) {
     min-height: 97px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   @media screen and (min-width: $desktop-width) {

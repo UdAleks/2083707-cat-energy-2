@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  gap: 23px;
 }
 
 .studio__title {
   margin: 0;
-  margin-right: 23px;
+  // margin-right: 23px;
   font-size: 16px;
   line-height: 20px;
   color: $dark-gray-text-4;

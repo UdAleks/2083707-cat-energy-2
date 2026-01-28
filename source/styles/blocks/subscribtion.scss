@@ -9,15 +9,18 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-bottom: 104px;
+    width: 1220px;
+    margin: 0 auto; //
+    margin-bottom: 104px; // временное, если нет убрать у формы
   }
 }
 
 .subscribtion__title {
-  margin: 0 0 32px;
+  margin: 0 0 32px 20px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 66px;
+    margin-left: 70px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -30,6 +33,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .subscribtion__label {
@@ -80,8 +88,10 @@
     border-color: #cdcdcd;
   }
 
-  &focus {
+  &:focus {
     border: 2px solid $dark-gray-text-4;
+    outline: none;
+    box-shadow: none;
   }
 }
 
