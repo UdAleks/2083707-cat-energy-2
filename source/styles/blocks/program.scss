@@ -125,6 +125,7 @@
   grid-area: program-link;
   align-self: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: fit-content;
   font-family: $title-font;

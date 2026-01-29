@@ -86,6 +86,7 @@
 .product-card__parameters-item {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 5px;
