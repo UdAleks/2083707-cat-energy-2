@@ -9,7 +9,7 @@
   @media screen and (min-width: $desktop-width) {
     width: 1440px;
     margin: 0 auto;
-    padding: 32px 110px 69px;
+    padding: 0 110px 69px;
   }
 }
 
@@ -17,6 +17,7 @@
   margin-top: 0;
   margin-bottom: 41px;
   color: $dark-text;
+  letter-spacing: -1px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -39,7 +40,7 @@
 
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 77px;
+    gap: 75px;
   }
 }
 
@@ -117,7 +118,7 @@
 
 .working-principles__description {
   align-self: center;
-  margin: 0;
+  margin: -2px 0 0;
   font-size: 14px;
   line-height: 18px;
 

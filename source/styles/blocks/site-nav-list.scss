@@ -31,9 +31,10 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    gap: 31px;
+    gap: 34px;
     // width: 975px;
     margin-left: auto;
+    letter-spacing: 1px;
   }
 }
 
@@ -78,6 +79,10 @@
   @media screen and (min-width: $tablet-width) {
     padding: 12px 0 14px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 14px;
+  }
 }
 
 .site-nav-list--index a {
@@ -93,7 +98,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    text-underline-offset: 8px;
+    text-underline-offset: 14px;
   }
 }
 

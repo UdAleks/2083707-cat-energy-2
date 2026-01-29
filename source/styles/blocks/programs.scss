@@ -1,6 +1,6 @@
 .programs {
   width: (calc(100vw - 40px));
-  margin: 0 auto 20px;
+  margin: 0 auto 21px;
 
   @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
@@ -16,7 +16,7 @@
 .programs__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 22px;
+  gap: 21px;
   margin: 0;
   padding: 0;
   list-style: none;

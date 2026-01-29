@@ -29,9 +29,8 @@
       "hero-subtitle hero-image"
       "hero-button   hero-image";
     max-width: 1220px;
-    margin-top: -116px;
-    margin-bottom: 80px;
-    padding-top: 143px;
+    margin-bottom: 134px;
+    padding-top: 30px;
     color: $dark-text;
   }
 }
@@ -102,6 +101,7 @@
   grid-area: hero-title;
   margin: 0 0 25px;
   line-height: 100%;
+  letter-spacing: -1px;
 
   @media screen and (min-width: $tablet-width) {
     margin-left: 90px;
@@ -110,8 +110,9 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-left: 80px;
-    padding-top: 81px;
+    margin-left: 50px;
+    padding-top: 80px;
+    letter-spacing: -1px;
   }
 }
 
@@ -130,7 +131,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 50px;
     margin-bottom: 52px;
   }
 }
@@ -157,12 +158,16 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 50px;
   }
 }
 
 .hero__image {
   grid-area: hero-image;
+
+  @media screen and (max-width: calc($tablet-width - 1px)) {
+    margin-bottom: 3px;
+  }
 
   @media screen and (min-width: $tablet-width) {
     margin-top: -1px;
@@ -170,7 +175,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    margin-left: -299px;
+    // margin-top: 2;
+    margin-left: -163px;
   }
 }
 
