@@ -1,8 +1,9 @@
 .working-principles {
-  padding: 20px 20px 49px;
+  padding: 0 20px 49px;
 
-  @media screen and (min-width: $tablet-width) {
-    padding: 32px 30px 92px;
+  @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -14,7 +15,7 @@
 
 .working-principles__title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   color: $dark-text;
 
   @media screen and (min-width: $tablet-width) {
@@ -33,7 +34,7 @@
 
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 137px;
+    gap: 37px 63px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -61,14 +62,23 @@
   @media screen and (min-width: $tablet-width) {
     position: absolute;
     right: 0;
+    z-index: -1;
     display: block;
     content: counter(item-number);
     font-family: $title-font;
     font-size: 280px;
     line-height: 280px;
     color: $site-secondary-bg;
-    z-index: -1;
+    transform: translateX(-2px);
   }
+}
+
+.working-principles__item--1::after {
+  transform: translateX(-24px);
+}
+
+.working-principles__item--2::after {
+  transform: translateX(-4px);
 }
 
 .working-principles__icon {

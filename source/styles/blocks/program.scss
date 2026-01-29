@@ -6,7 +6,7 @@
     "program-description program-description"
     "program-link        program-link";
   gap: 22px 20px;
-  padding: 24px 20px 18px;
+  padding: 24px 20px 21px;
   background-color: $site-secondary-bg;
 
   @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
@@ -56,6 +56,7 @@
   @media screen and (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
+    margin-top: -12px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -81,7 +82,7 @@
   @media screen and (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    transform: translate(30px, -17px);
+    transform: translate(30px, -11px);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -95,12 +96,12 @@
   width: 67px;
   height: 50px;
   background-image: url("../../icons/stack.svg#pro-icon");
-  transform: translateX(-9px);
+  transform: translateX(-8px);
 
   @media screen and (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    transform: translate(-34px, 44px);
+    transform: translate(-34px, 43px);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -116,7 +117,8 @@
   margin: 0;
 
   @media screen and (min-width: $tablet-width) {
-    padding-top: 16px;
+    // padding-top: 20px;
+    min-height: 120px;
     color: $dark-text;
   }
 }
@@ -158,13 +160,17 @@
   display: block;
   width: 32px;
   height: 12px;
-  margin-left: 25px;
+  margin-left: 16px;
   content: "";
   mask-image: url("../../icons/stack.svg#icon-arrow");
   mask-repeat: no-repeat;
   mask-position: -8px 50%;
   mask-size: contain;
   background-color: #000000;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 26px;
+  }
 }
 
 .program__link:hover::after {

@@ -7,10 +7,11 @@
     "example-list"
     "example-compare";
   gap: 20px;
-  padding: 25px 20px 40px;
+  padding: 24px 20px 39px;
   background-color: #eaeaea;
 
   @media screen and (min-width: $tablet-width) {
+    gap: 55px;
     padding: 45px 30px 101px;
     background-color: transparent;
     background-image: linear-gradient(to top, $site-secondary-bg 462px, transparent 462px);
@@ -35,7 +36,6 @@
   color: $dark-text;
 
   @media screen and (min-width: $tablet-width) {
-    gap: 55px;
     margin-bottom: 5px;
   }
 
@@ -67,7 +67,7 @@
   grid-template-areas:
     "example-weight example-time"
     "example-cost   example-cost";
-  gap: 20px 32px;
+  gap: 19px 31px;
   margin: 0 auto;
   padding: 0;
 
@@ -94,7 +94,7 @@
   align-self: center;
   order: 2;
   display: block;
-  margin: -10px auto 0;
+  margin: -12px auto 0;
   padding: 0 16px;
   width: min-content;
   font-size: 12px;
@@ -105,6 +105,7 @@
   background-color: #eaeaea;
 
   @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
     background-color: $site-bg;
   }
 
@@ -185,7 +186,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 140px 140px;
-  gap: 4px;
+  gap: 1px;
   width: 280px;
   margin: 0 auto;
 
@@ -203,7 +204,7 @@
   background-color: #666666;
   border: none;
   border-radius: 2px;
-  transform: translateX(140px);
+  transform: translateX(137px);
   z-index: 3;
   cursor: pointer;
 
