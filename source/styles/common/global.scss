@@ -91,9 +91,6 @@ a {
 }
 
 .catalog-section-title {
-  // display: flex;
-  // align-items: center;
-  // gap: 20px;
   position: relative;
   width: fit-content;
   font-size: 24px;
@@ -101,14 +98,8 @@ a {
   color: $dark-text;
   background-color: $site-bg;
   box-shadow: -40px 0 0 0 $site-bg, 40px 0 0 0 $site-bg;
-  // white-space: nowrap;
-
-  @media screen and (max-width: calc($tablet-width - 1px)) {
-    // text-indent: 20px;
-  }
 
   @media screen and (min-width: $tablet-width) {
-    // gap: 40px;
     font-size: 32px;
     box-shadow: -40px 0 0 0 $site-bg, 40px 0 0 0 $site-bg;
   }
@@ -138,38 +129,6 @@ a {
     top: 17px;
   }
 }
-
-// .catalog-section-title2 {
-
-//   color: $dark-text;
-
-// }
-
-// .catalog-section-title::before,
-// .catalog-section-title::after {
-//   content: "";
-//   height: 2px;
-//   background-color: $primary-decoration-color;
-// }
-
-// .catalog-section-title::before {
-//   @media screen and (max-width: calc($tablet-width - 1px)) {
-//     display: none;
-//   }
-
-//   @media screen and (min-width: $tablet-width) {
-//     width: 30px;
-//   }
-
-//   @media screen and (min-width: $desktop-width) {
-//     width: 70px;
-//   }
-// }
-
-// .catalog-section-title::after {
-//   flex-grow: 1;
-//   width: 35px;
-// }
 
 .mobile-br {
   display: none;

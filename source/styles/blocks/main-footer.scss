@@ -1,20 +1,11 @@
 .main-footer {
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  // justify-content: center;
-  // align-items: center;
-  // min-width: $mobile-width;
   padding: 40px 20px;
   background-color: $site-secondary-bg;
 
   @media screen and (min-width: $tablet-width) {
-    // flex-direction: row;
-    // justify-content: space-between;
     grid-template-columns: min-content 1fr min-content;
     align-items: center;
     gap: 60px;
