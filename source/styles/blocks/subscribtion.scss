@@ -16,7 +16,7 @@
 }
 
 .subscribtion__title {
-  margin: 0 0 32px 20px;
+  margin: 0 0 31px 20px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 66px;
@@ -66,7 +66,7 @@
 }
 
 .subscribtion__field {
-  width: 100%;
+  width: 280px;
   min-height: 56px;
   padding: 13px;
   font-size: 20px;
@@ -102,7 +102,9 @@
 }
 
 .subscribtion__field::placeholder {
+  color: $dark-gray-text-4;
   text-transform: uppercase;
+  letter-spacing: -2px;
 }
 
 .subscribtion__button {

@@ -1,5 +1,5 @@
 .additional {
-  margin: 0 auto 40px;
+  margin: 0 auto 41px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 80px;
@@ -12,7 +12,7 @@
 }
 
 .additional__title {
-  margin: 0 0 36px 20px;
+  margin: 0 0 35px 20px;
   font-family: $title-font;
 
   @media screen and (min-width: $tablet-width) {
@@ -28,7 +28,7 @@
 .additional__container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 35px;
+  gap: 34px;
   width: calc(100vw - 40px);
   margin: 0 auto;
 
@@ -59,6 +59,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
+    min-height: 200px;
   }
 
   @media screen and (min-width: $desktop-width) {

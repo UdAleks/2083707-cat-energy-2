@@ -94,7 +94,7 @@
 .site-nav-list__item--current {
   @media screen and (min-width: $tablet-width) {
     text-decoration: 2px underline $primary-decoration-color;
-    text-underline-offset: 12px;
+    text-underline-offset: 11px;
   }
 
   @media screen and (min-width: $desktop-width) {

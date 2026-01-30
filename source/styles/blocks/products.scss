@@ -1,5 +1,5 @@
 .products {
-  margin: 0 auto 26px;
+  margin: 0 auto 24px;
 
   @media screen and (max-width: calc($tablet-width - 1px)) {
     border-top: 1px solid #d9d9d9;
@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
-    margin-bottom: 74px;
+    margin-bottom: 72px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -18,7 +18,8 @@
 
 .products__title {
   margin: 0 20px 41px;
-  padding-top: 27px;
+  padding-top: 25px;
+  letter-spacing: -1px;
 
   @media screen and (min-width: $tablet-width) {
     margin: 0 0 84px;
@@ -48,6 +49,7 @@
 
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fit, 245px);
+    gap: 63px 80px;
   }
 }
 

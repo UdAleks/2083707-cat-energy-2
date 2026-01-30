@@ -100,7 +100,7 @@ a {
   line-height: 100%;
   color: $dark-text;
   background-color: $site-bg;
-  box-shadow: -20px 0 0 0 $site-bg, 20px 0 0 0 $site-bg;
+  box-shadow: -40px 0 0 0 $site-bg, 40px 0 0 0 $site-bg;
   // white-space: nowrap;
 
   @media screen and (max-width: calc($tablet-width - 1px)) {
@@ -120,15 +120,23 @@ a {
 
 .catalog-section-title::before {
   position: absolute;
-  top: 50%;
+  top: 9px;
   right: 0;
+  z-index: -1;
   display: block;
   width: 100vw;
   height: 2px;
   content: "";
   background-color: $primary-decoration-color;
   box-shadow: 100vw 0 0 0 $primary-decoration-color;
-  z-index: -1;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 13px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 17px;
+  }
 }
 
 // .catalog-section-title2 {

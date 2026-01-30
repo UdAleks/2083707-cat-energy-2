@@ -3,17 +3,17 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   justify-content: center;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 26px;
   font-size: 12px;
   line-height: 16px;
 
   @media screen and (max-width: calc($tablet-width - 1px)) {
     grid-template-columns: 1fr 1fr;
-    gap: 14px 0;
+    gap: 15px 0;
   }
 
   @media screen and (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 19px;
     padding: 10px 37px 40px;
     font-size: 16px;
     line-height: 20px;
@@ -89,8 +89,8 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: $tablet-width) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
   }
 }

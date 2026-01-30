@@ -5,7 +5,7 @@
     "additional-card-title"
     "additional-card-parameter-wrapper"
     "additional-card-link-button";
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 19px;
   font-size: 14px;
   line-height: 20px;
@@ -20,7 +20,7 @@
     grid-template-areas:
       "additional-card-title       additional-card-parameter-wrapper"
       "additional-card-link-button additional-card-link-button";
-    padding: 26px 38px 28px;
+    padding: 25px 38px 28px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
@@ -29,8 +29,8 @@
     grid-template-columns: 1fr 1fr 244px;
     grid-template-areas: "additional-card-title additional-card-parameter-wrapper additional-card-link-button";
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    padding-top: 13px;
+    padding-bottom: 16px;
   }
 }
 
@@ -40,7 +40,7 @@
 
 .additional-card__title {
   grid-area: additional-card-title;
-  margin: 0 0 13px;
+  margin: 0 0 10px;
   font-family: $title-font;
   font-size: 16px;
   line-height: 100%;
@@ -61,11 +61,12 @@
   grid-area: additional-card-parameter-wrapper;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     justify-content: flex-end;
+    align-self: flex-end;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -76,7 +77,7 @@
 
 .additional-card__parameter-value {
   @media screen and (min-width: $tablet-width) {
-    margin-left: 49px;
+    margin-left: 52px;
   }
 }
 

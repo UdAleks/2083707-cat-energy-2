@@ -37,6 +37,10 @@
   @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     text-align: right;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 6px;
+  }
 }
 
 .address__title {
