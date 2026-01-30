@@ -19,11 +19,12 @@
 .products__title {
   margin: 0 20px 41px;
   padding-top: 25px;
-  letter-spacing: -1px;
+  letter-spacing: -0.9px;
 
   @media screen and (min-width: $tablet-width) {
     margin: 0 0 84px;
     padding-top: 65px;
+    letter-spacing: -1.4px;
   }
 
   @media screen and (min-width: $desktop-width) {

@@ -64,6 +64,7 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: -0.45px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 23px;
@@ -97,6 +98,11 @@
   width: calc(100% - 8px);
   color: $dark-gray-text-4;
   background-color: $site-secondary-bg;
+  letter-spacing: 0.9px;
+
+  @media screen and (min-width: $tablet-width) {
+    letter-spacing: 0.3px;
+  }
 
   &:hover,
   &:focus,

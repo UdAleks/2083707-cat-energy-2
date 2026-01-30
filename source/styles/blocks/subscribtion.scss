@@ -17,15 +17,18 @@
 
 .subscribtion__title {
   margin: 0 0 31px 20px;
+  letter-spacing: -0.6px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 66px;
     margin-left: 70px;
+    letter-spacing: -0.7px;
   }
 
   @media screen and (min-width: $desktop-width) {
     margin-bottom: 72px;
     margin-left: 0;
+    letter-spacing: -0.85px;
   }
 }
 

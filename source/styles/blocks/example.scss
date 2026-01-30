@@ -34,10 +34,11 @@
   grid-area: example-title;
   margin: 0 0 20px;
   color: $dark-text;
-  letter-spacing: -1px;
+  letter-spacing: -0.9px;
 
   @media screen and (min-width: $tablet-width) {
     margin-bottom: 5px;
+    letter-spacing: -1.2px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -127,7 +128,7 @@
   color: $dark-text;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 

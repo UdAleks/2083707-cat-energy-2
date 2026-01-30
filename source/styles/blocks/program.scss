@@ -35,6 +35,7 @@
   line-height: 37px;
   color: $dark-text;
   text-transform: uppercase;
+  letter-spacing: -0.97px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 36px;
@@ -144,6 +145,7 @@
   line-height: 100%;
   color: $dark-text;
   text-transform: uppercase;
+  letter-spacing: 0.1px;
 
   @media screen and (max-width: calc($tablet-width - 1px)) {
     padding-top: 19px;
