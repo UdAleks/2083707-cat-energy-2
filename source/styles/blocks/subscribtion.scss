@@ -17,6 +17,7 @@
 
 .subscribtion__title {
   margin: 0 0 31px 20px;
+  font-weight: 400;
   letter-spacing: -0.6px;
 
   @media screen and (min-width: $tablet-width) {
@@ -48,6 +49,7 @@
   margin: 0 0 24px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: $dark-text;
   text-align: center;
   letter-spacing: -0.5px;
@@ -74,6 +76,7 @@
   width: 280px;
   min-height: 56px;
   padding: 13px;
+  font-family: $title-font;
   font-size: 20px;
   line-height: 20px;
   color: $dark-gray-text-4;
