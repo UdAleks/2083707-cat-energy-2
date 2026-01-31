@@ -61,6 +61,8 @@
 
 .address__map {
   position: relative;
+  width: 100vw;
+  background-color: $site-secondary-bg;
 }
 
 .address__image {
@@ -70,6 +72,7 @@
 
 .address__image img {
   display: block;
+  margin: 0 auto;
 }
 
 .address__iframe {
