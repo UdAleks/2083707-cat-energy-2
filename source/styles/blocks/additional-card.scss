@@ -1,6 +1,6 @@
 .additional-card {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template: auto/ 1fr;
   grid-template-areas:
     "additional-card-title"
     "additional-card-parameter-wrapper"
@@ -62,6 +62,7 @@
   grid-area: additional-card-parameter-wrapper;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 12px;
 
   @media screen and (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {

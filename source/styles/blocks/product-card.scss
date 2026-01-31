@@ -13,6 +13,7 @@
   }
 
   @media screen and (min-width: $tablet-width) {
+    grid-template-rows: auto auto 1fr auto;
     gap: 19px;
     padding: 10px 37px 40px;
     font-size: 16px;

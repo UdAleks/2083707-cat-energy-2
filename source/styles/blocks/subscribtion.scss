@@ -94,8 +94,7 @@
   }
 
   &:focus {
-    border: 2px solid $dark-gray-text-4;
-    outline: none;
+    outline: 2px solid $dark-gray-text-4;
     box-shadow: none;
   }
 }
@@ -107,7 +106,7 @@
 .subscribtion__field::placeholder {
   color: $dark-gray-text-4;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  // letter-spacing: -2px;
 }
 
 .subscribtion__button {

@@ -96,14 +96,14 @@
   align-self: center;
   order: 2;
   display: block;
-  margin: -13px auto 0;
-  padding: 0 16px;
-  width: min-content;
+  margin: -10px auto 0;
+  padding: 0 9px;
+  max-width: 100%;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
   text-transform: lowercase;
-  white-space: nowrap;
+  white-space: wrap;
   background-color: #eaeaea;
 
   @media screen and (min-width: $tablet-width) {
@@ -229,7 +229,7 @@
 
   @media screen and (min-width: $tablet-width) {
     height: 512px;
-    transform: translateX(276px);
+    transform: translateX(277px);
   }
 
   &::before {
