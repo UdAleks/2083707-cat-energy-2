@@ -44,16 +44,18 @@
   }
 }
 
-.subscribtion__label {
+.subscribtion__form-title {
   margin: 0 0 24px;
   font-size: 16px;
   line-height: 24px;
   color: $dark-text;
   text-align: center;
+  letter-spacing: -0.5px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
+    letter-spacing: -0.6px;
   }
 }
 
@@ -104,9 +106,9 @@
 }
 
 .subscribtion__field::placeholder {
+  font-family: $title-font;
   color: $dark-gray-text-4;
   text-transform: uppercase;
-  // letter-spacing: -2px;
 }
 
 .subscribtion__button {

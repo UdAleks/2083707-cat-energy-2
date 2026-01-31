@@ -60,6 +60,10 @@
   min-height: 290px;
   margin: 0 auto;
 
+  @media screen and (max-width: $tablet-width) {
+    margin-top: 1px;
+  }
+
   @media screen and (min-width: $tablet-width) {
     width: calc(100vw - 60px);
     min-height: 200px;
